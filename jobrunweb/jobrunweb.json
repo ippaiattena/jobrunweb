@@ -1,0 +1,8 @@
+﻿{
+  "batPath": "BATファイルのパス",
+  "getKey": "認証キー",
+  "makerKey": "IFTTT MAKERのキー",
+  "makerTrigger": "IFTTT MAKERのトリガー",
+  "remoteHost": "UDPのホスト",
+  "remotePort": "UDPのポート"
+}
