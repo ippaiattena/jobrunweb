@@ -102,7 +102,7 @@ namespace jobrunweb
         {
             //データを送信するリモートホストとポート番号
             string remoteHost = _json.remoteHost;
-            int remotePort = _json.remotePort;
+            int remotePort = (int)_json.remotePort;
 
             //UdpClientオブジェクトを作成する
             System.Net.Sockets.UdpClient udp = new System.Net.Sockets.UdpClient();
