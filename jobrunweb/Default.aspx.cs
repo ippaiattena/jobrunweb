@@ -19,7 +19,7 @@ namespace jobrunweb
             try
             {
                 // jsonファイル読み込み
-                StreamReader reader = new StreamReader(Server.MapPath("./jobrunweb.json"), Encoding.GetEncoding("Shift_JIS"));
+                StreamReader reader = new StreamReader(Server.MapPath("./jobrunweb.json"), _enc);
                 string jsonValue = reader.ReadToEnd();
                 reader.Close();
                 // DynamicJson
@@ -57,7 +57,7 @@ namespace jobrunweb
                 // Logへ書き込み
                 using (StreamWriter writer = new StreamWriter(_json.batPath + @"Log\log.txt", true, _enc))
                 {
-                    writer.WriteLine(DateTime.Now.ToString() + bat.ToString());
+                    writer.WriteLine(DateTime.Now.ToString() + " " + bat.ToString());
                 }
             }
             catch (Exception ex)
