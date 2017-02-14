@@ -1,3 +1,3 @@
 # jobrunweb
-Move batch from the web
+Run batch from the web
 run by LiveCam3
